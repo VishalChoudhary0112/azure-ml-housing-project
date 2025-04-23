@@ -1,0 +1,8 @@
+name: azure-ml-env
+dependencies:
+  - python=3.8
+  - scikit-learn
+  - pandas
+  - pip
+  - pip:
+      - azureml-defaults
