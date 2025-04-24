@@ -7,7 +7,7 @@ from azureml.core import Run
 run = Run.get_context()
 
 # 1. load & clean
-df = pd.read_csv("data/boston.csv")
+df = pd.read_csv("boston.csv")
 df = df.drop(columns=["Unnamed: 0"])
 X = df.drop("medv", axis=1)
 y = df["medv"]
